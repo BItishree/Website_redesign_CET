@@ -1,0 +1,79 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+                <form action="" method="POST" enctype="multipart/form-data" >
+
+  {% csrf_token %}
+  <div class="quform-elements">
+      <div class="quform-element">
+                                                                    <p>events_title
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="events_title" type="text" name="events_title" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>start_time
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="start_time" type="time" name="start_time" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>end_time
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="end_time" type="time" name="end_time" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>location
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="location" type="text" name="location" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>date
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="date" type="date" name="date" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>upload
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="upload" name="upload" >
+                                                                        </span>
+                                                                    </p>
+                                                                   </div>
+
+
+  <button type="submit" class="btn btn-primary">ADD</button>
+        </div>
+</form>
+
+{% endblock %}

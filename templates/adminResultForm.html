@@ -1,0 +1,59 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+                <form action="" method="POST" enctype="multipart/form-data" >
+
+  {% csrf_token %}
+                                                                <div class="quform-elements">
+                                                                <div class="quform-element">
+                                                                    <p>result_title
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="result_title" type="text" name="result_title" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>result_description
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="result_description" type="text" name="result_description" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+<!--                                                                     <div class="quform-element">-->
+<!--                                                                    <p>date-->
+<!--                                                                        <br>-->
+<!--                                                                        <span class="wpcf7-form-control-wrap your-email">-->
+<!--                                                                            <input id="date" type="text" name="date" size="40" class="input1" aria-required="true" aria-invalid="false">-->
+<!--                                                                        </span>-->
+<!--                                                                    </p>-->
+<!--                                                                </div>-->
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>upload
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="upload" name="upload" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                     <button type="submit" class="btn btn-primary">ADD</button>
+        </div>
+</form>
+
+{% endblock %}

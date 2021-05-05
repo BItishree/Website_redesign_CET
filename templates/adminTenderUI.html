@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+
+<h4 class="text-center">All Tenders</h4>
+
+<h4 class="text-center"><a href="{% url 'adminTenderForm' %}">Add new tender</a></h4>
+
+
+{% for i in n %}
+
+<div class="container" style="margin-top: 50px">
+	<div class="row">
+		<div class="col-3">
+			tender_id
+		</div>
+		<div class="col-9">
+			{{i.tender_id}}
+		</div>
+
+
+
+
+		<div class="col-3">
+			tender_department
+		</div>
+		<div class="col-9">
+			{{i.tender_department}}
+		</div>
+
+
+
+		<div class="col-3">
+			tender_name_no
+		</div>
+		<div class="col-9">
+			{{i.tender_name_no}}
+		</div>
+
+
+		<div class="col-3">
+			tender_contactinfo
+		</div>
+		<div class="col-9">
+			{{i.tender_contactinfo}}
+		</div>
+
+
+
+
+		<div class="col-3">
+			opening_date
+		</div>
+		<div class="col-9">
+			{{i.opening_date}}
+		</div>
+
+
+
+
+		<div class="col-3">
+			last_date
+		</div>
+		<div class="col-9">
+			{{i.last_date}}
+		</div>
+
+
+
+</div>
+</div>
+
+{% endfor %}
+
+
+
+
+
+
+{% endblock %}
+
+

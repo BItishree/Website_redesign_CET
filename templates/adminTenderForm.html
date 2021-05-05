@@ -1,0 +1,83 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+                <form action="" method="POST"  enctype="multipart/form-data" >
+
+  {% csrf_token %}
+  <div class="quform-elements">
+                                                                <div class="quform-element">
+                                                                    <p>tender_department
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="tender_department" type="text" name="tender_department" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>tender_name_no
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="tender_name_no" type="text" name="tender_name_no" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                    <div class="quform-element">
+                                                                    <p>tender_contactinfo
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="tender_contactinfo" type="text" name="tender_contactinfo" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>opening_date
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="opening_date" type="date" name="opening_date" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>last_date
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="last_date" type="date" name="last_date" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>Upload
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="upload" name="upload" required>
+                                                                        </span>
+                                                                    </p>
+                                                                    </div>
+
+
+
+  <button type="submit" class="btn btn-primary">ADD</button>
+        </div>
+</form>
+
+{% endblock %}
+

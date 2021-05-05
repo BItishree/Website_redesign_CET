@@ -1,0 +1,138 @@
+
+
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!--Body-->
+
+
+
+
+
+
+
+
+
+
+            <div class="kingster-page-wrapper" id="kingster-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 70px 0px 10px 0px;">
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+
+
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align">
+                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;">
+                                                        <a class="gdlr-core-lightgallery gdlr-core-js " href="images/principal.jpg"><img src="{% static 'images/principal.jpg' %}" width="180" height="130"  alt="" /><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"  ></i></span></a>
+
+
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="gdlr-core-pbf-column gdlr-core-column-40">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 20px 0px;padding: 0px 0px 0px 0px;">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
+                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 34px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #161616 ;">Prof. Prashant Kumar Patra</h3>
+                                                    </div>
+                                                    <span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 14px ;font-style: normal ;color: #6c6c6c ;">Principal,CET</span>
+                                                    <span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 14px ;font-style: normal ;color: #6c6c6c ;">
+                                                        B.E.(Distn.)(NIT,Surat) &nbsp; M.Tech.(IIT,Kharagpur) &nbsp; Ph.D. (Utkal University) &nbsp; MIEEE,FIE(I),MIAENG,LMISTE</span>
+
+                                                </div>
+                                            </div>
+
+
+
+                                             <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-personnel-info-item gdlr-core-item-pdb gdlr-core-item-pdlr clearfix" style="padding-bottom: 17px ;">
+                                                    <div class="gdlr-core-personnel-info-item-list-wrap">
+
+                                                        <div class="kingster-personnel-info-list kingster-type-email"><i class="kingster-personnel-info-list-icon fa fa-envelope-open"></i>Email :principalcet@cet.edu.in</div>
+                                                        <div class="kingster-personnel-info-list kingster-type-phone"><i class="kingster-personnel-info-list-icon fa fa-phone"></i>Mob :+91-9437189863 &nbsp; Res :0674-2386075(O) &nbsp;Fax :0674 -2386182
+
+
+                                                            <a class="gdlr-core-button  gdlr-core-button-solid gdlr-core-button-no-border" href="{% url 'individual_faculty' %}" style="font-size: 13px ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;">
+                                                                <span class="gdlr-core-content" >MORE</span>
+                                                            </a></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align" style="margin-bottom: 55px ;">
+                                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #3db166 ;border-bottom-width: 3px ;"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="autonomous-tiles">
+                <a href="{% url 'faculty_dept' 'Architecture' %}" class="custom-tile">Architecture</a>
+                <a href="{% url 'faculty_dept' 'Biotechnology' %}" class="custom-tile">Biotechnology</a>
+                <a href="{% url 'faculty_dept' 'Civil_Engineering' %}" class="custom-tile">Civil Engineering</a>
+                <a href="{% url 'faculty_dept' 'Computer_Science_and_Engineering' %}" class="custom-tile">Computer Science & Engineering</a>
+                <a href="{% url 'faculty_dept' 'MCA' %}" class="custom-tile">MCA</a>
+                <a href="{% url 'faculty_dept' 'Electrical_Engineering' %}" class="custom-tile">Electrical Engineering</a>
+                <a href="{% url 'faculty_dept' 'Fashion_and_Apparel_Technology' %}" class="custom-tile">Fashion & Apparel Technology</a>
+                <a href="{% url 'faculty_dept' 'Information_Technology' %}" class="custom-tile">Information Technology</a>
+                <a href="{% url 'faculty_dept' 'Instrumentation_and_Electronics_Engineering' %}" class="custom-tile">Instrumentation & Electronics Engineering</a>
+                <a href="{% url 'faculty_dept' 'Mechanical_Engineering' %}" class="custom-tile">Mechanical Engineering</a>
+                <a href="{% url 'faculty_dept' 'Textile_Engineering' %}" class="custom-tile">Textile Engineering</a>
+                <a href="{% url 'faculty_dept' 'Planning' %}" class="custom-tile">Planning</a>
+                <a href="{% url 'faculty_dept' 'Mathematics_and_Humanities' %}" class="custom-tile">Mathematics & Humanities</a>
+                <a href="{% url 'faculty_dept' 'Physics' %}" class="custom-tile">Physics</a>
+                <a href="{% url 'faculty_dept' 'Chemistry' %}" class="custom-tile">Chemistry</a>
+
+
+
+
+
+            </div>
+
+<br>
+
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!--Body-->
+
+
+
+
+
+
+
+
+            <div class="kingster-page-title-wrap  kingster-style-custom kingster-left-align" id="autonomous">
+                <div class="kingster-header-transparent-substitute"></div>
+                <div class="kingster-page-title-overlay"></div>
+                <div class="kingster-page-title-bottom-gradient"></div>
+                <div class="kingster-page-title-container kingster-container">
+                    <div class="kingster-page-title-content kingster-item-pdlr" id="div_983a_1">
+                        <h1 class="kingster-page-title" id="h1_983a_0">Autonomous</h1></div>
+                </div>
+            </div>
+            <div class="kingster-breadcrumbs">
+                <div class="kingster-breadcrumbs-container kingster-container">
+                    <div class="kingster-breadcrumbs-item kingster-item-pdlr"> <span property="itemListElement" typeof="ListItem">
+                        <a property="item" typeof="WebPage" title="Go to Kingster." href="{% url 'home' %}" class="home"><span property="name">Home</span></a>
+                        <meta property="position" content="1">
+                        </span>&gt;<span property="itemListElement" typeof="ListItem"><span property="name">Autonomous</span>
+                        <meta property="position" content="2">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="autonomous-tiles">
+                <a href="{% url 'ugsyllabus' %}" class="custom-tile">Syllabus for UG Program</a>
+                <a href="{% url 'pgsyllabus' %}" class='custom-tile'>Syllabus for PG Program</a>
+                <a href="{% url 'acadregulationforug' %}" class='custom-tile'>Academic Regulation for UG Program</a>
+                <a href="{% url 'acadregulationforpg' %}" class='custom-tile'>Academic Regulation for PG Program</a>
+                <a href="{% url 'calendar' %}" class='custom-tile'>Academic Calendar's for UG and PG Program</a>
+                <a href="https://results.cet.edu.in/" class='custom-tile'>Result</a>
+                <a href="{% url 'examschedule' %}" class='custom-tile'>Exam Schedule</a>
+                <a href="{% url 'phd' %}" class='custom-tile'>PhD</a>
+                <a href="{% url 'bggoverning' %}" class='custom-tile'>BOG(Governing Council) Minutes</a>
+            </div>
+
+<br>
+
+
+
+
+
+
+
+
+{% endblock %}
+

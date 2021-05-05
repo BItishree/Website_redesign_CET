@@ -1,0 +1,73 @@
+
+
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!--Body-->
+
+<br>
+            <br>
+
+
+
+                                <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                    <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                        <div style="overflow-x: auto;">
+                                                            <table style="min-width: 835px;">
+                                                                <tbody>
+
+
+
+<!--for loop-->{% for i in n %}
+
+<tr>
+    <th>Date of notice</th>
+    <th>Department</th>
+    <th>Name of the Post</th>
+    <th>No of Vacancies</th>
+    <th>Last date</th>
+    <th>Full notification</th>
+    <th>Qualification</th>
+    <th>Application Form</th>
+</tr>
+
+                                                                    <tr>
+                                                                        <td>{{i.dt_of_notice}}</td>
+                                                                        <td>{{i.career_department}}</td>
+                                                                        <td>{{i.name_of_the_post}}</td>
+                                                                        <td>{{i.no_of_vacancies}}</td>
+                                                                        <td>{{i.last_date}}</td>
+                                                                        <td><a href="{{i.full_notification.url}}"  download> read more</a></td>
+                                                                        <td>{{i.qualification}}</td>
+                                                                        <td><a href="{{i.application_form.url}}" > Download</a></td>
+                                                                    </tr>
+
+
+
+{% endfor %}
+
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+

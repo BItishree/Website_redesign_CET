@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+
+<h4 class="text-center">All Results</h4>
+
+<h4 class="text-center"><a href="{% url 'adminResultForm' %}">Add New Result</a></h4>
+
+
+{% for i in n %}
+
+<div class="container" style="margin-top: 50px">
+	<div class="row">
+		<div class="col-3">
+			result_id
+		</div>
+		<div class="col-9">
+			{{i.result_id}}
+		</div>
+
+		<div class="col-3">
+			result_title
+		</div>
+		<div class="col-9">
+			{{i.result_title}}
+		</div>
+
+
+
+		<div class="col-3">
+			result_description
+		</div>
+		<div class="col-9">
+			{{i.result_description}}
+		</div>
+
+
+
+
+		<div class="col-3">
+			date
+		</div>
+		<div class="col-9">
+			{{i.date}}
+		</div>
+
+
+
+		<div class="col-3">
+			upload
+		</div>
+		<div class="col-9">
+			<a href="{{i.upload.url}}" download>Click here</a>
+		</div>
+
+
+
+</div>
+</div>
+
+{% endfor %}
+
+
+
+
+
+
+{% endblock %}
+
+
+

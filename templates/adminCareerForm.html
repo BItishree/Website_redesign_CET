@@ -1,0 +1,89 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+                <form action="" method="POST" enctype="multipart/form-data" >
+
+  {% csrf_token %}
+  <div class="quform-elements">
+      <div class="quform-element">
+                                                                    <p>career_department
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="career_department" type="text" name="career_department" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>name_of_the_post
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="name_of_the_post" type="text" name="name_of_the_post" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>no_of_vacancies
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="no_of_vacancies" type="number" name="no_of_vacancies" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>last_date
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="last_date" type="date" name="last_date" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                            <div class="quform-element">
+                                                                    <p>qualification
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="qualification" type="text" name="qualification" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>full_notification
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="full_notification" name="full_notification" >
+                                                                        </span>
+                                                                    </p>
+                                                                   </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>application_form
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="application_form" name="application_form" >
+                                                                        </span>
+                                                                    </p>
+                                                                   </div>
+
+  <button type="submit" class="btn btn-primary">ADD</button>
+        </div>
+</form>
+
+{% endblock %}

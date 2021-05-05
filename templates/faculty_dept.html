@@ -1,0 +1,211 @@
+
+
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!--Body-->
+
+
+
+            <div class="kingster-page-title-wrap  kingster-style-custom kingster-left-align"
+                style="background-image: url(upload/shutterstock_59887279.jpg) ;">
+                <div class="kingster-header-transparent-substitute"></div>
+                <div class="kingster-page-title-overlay"></div>
+                <div class="kingster-page-title-bottom-gradient"></div>
+                <div class="kingster-page-title-container kingster-container">
+                    <div class="kingster-page-title-content kingster-item-pdlr"
+                        style="padding-top: 400px ;padding-bottom: 60px ;">
+                        <h1 class="kingster-page-title"
+                            style="font-size: 48px ;font-weight: 700 ;text-transform: none ;letter-spacing: 0px ;color: #ffffff ;">
+                            Department of {{dept_name}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="kingster-breadcrumbs">
+                <div class="kingster-breadcrumbs-container kingster-container">
+                    <div class="kingster-breadcrumbs-item kingster-item-pdlr"> <span property="itemListElement"
+                            typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Kingster."
+                                href="index.html" class="home"><span property="name">Home</span></a>
+                            <meta property="position" content="1">
+                        </span>&gt;<span property="itemListElement" typeof="ListItem"><span property="name">Department
+                                of {{dept_name}}</span>
+                            <meta property="position" content="2">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="kingster-page-wrapper" id="kingster-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    <div class="gdlr-core-pbf-sidebar-wrapper " style="margin: 0px 0px 30px 0px;">
+                        <div
+                            class="gdlr-core-pbf-sidebar-container gdlr-core-line-height-0 clearfix gdlr-core-js gdlr-core-container">
+                            <div class="gdlr-core-pbf-sidebar-content gdlr-core-column-40 gdlr-core-pbf-sidebar-padding gdlr-core-line-height gdlr-core-column-extend-left"
+                                style="padding: 35px 0px 20px 0px;">
+                                <div class="gdlr-core-pbf-sidebar-content-inner">
+                                    <table width="97%" border="0" cellspacing="1" cellpadding="3" align="center"
+                                        class="tblbdr">
+                                        <div>&nbsp;</div>
+                                        <form name="form1" method="post" action="/architecture_engineering.php">
+                                            <tr>
+                                                <td colspan="3" class="sectionHead">&nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3" class="thstyle"><b>Principal</b></th>
+                                            </tr>
+                                            <tr>
+                                                <td width="33%" rowspan="2" valign="top" class="tdborderBtm">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        class="gentxt">
+                                                        <tr>
+                                                            <!--<td width="30%" align="left" valign="top">
+                                                                                            <img src="" width="60" height="70" border="1" />
+                                                              <img src="images/no_photo.jpg" width="60" height="70" border="1" /></td>-->
+                                                            <td width="70%" valign="top" align="left">
+    
+                                                                <b>
+                                                                    Prof. (Dr.)&nbsp; Prashanta Kumar Patra
+                                                                </b>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                                                                B.E.(Distn.)(NIT,Surat)</br>
+                                                                M.Tech.(IIT,Kharagpur)</br>
+                                                                Ph.D. (Utkal University)</br>MIEEE,FIE(I),MIAENG,LMISTE &nbsp; <br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td rowspan="2" align="left" valign="top" class="tdborderBtm">Power
+                                                    Soft Computing,
+                                                    Pattern Recognition <br />
+                                                    <br />
+                                                    Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                        data-cfemail="d0bcbfbbb1beb1a4b890b3b5a4feb5b4a5feb9be">principalcet@cet.edu.in</a><br />
+                                                </td>
+                                                <td valign="top" class="tdborderBtm" rowspan="2"> Mob :9437189863 <br />
+                                                    Res:0674-2386075(O)</br>Fax :0674 -2386182
+                                                    &nbsp;</td>
+    
+    
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" height="8"><img src="/images/spacer.gif" width="1"
+                                                        height="1" /></td>
+                                            </tr>
+                                            <!--<tr><td>&nbsp;</td></tr>-->
+                                            <tr>
+                                                <th class="thstyle" colspan="3">
+                                                    <div align="center" class="gentxt"><b>
+                                                            Head of the Department : &nbsp;
+                                                          {% if hod %}  {{hod}} {% endif %}</b></div>
+                                                </th>
+                                            </tr>
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+  {% if assop %}
+                                    <table class="table">
+  <thead>
+    <tr>
+ <th colspan="4" class="thstyle"><b>Associate Professor</b></th>
+    </tr>
+  </thead>
+
+  <tbody>
+                                            {% for i in assop %}
+
+
+                                                                   <tr>
+
+                                                                       <td>{{i.faculty_name}}</td>
+                                                                        <td>{{i.faculty_email}}</td>
+                                                                        <td>{{i.resume.mob}}</td>
+                                                                        <td><a href="{% url 'faculty_more' i.faculty_id  %}"> More</a></td>
+                                                                   </tr>
+
+  {% endfor %}
+  </tbody>
+</table> {% endif %}
+
+
+
+
+                                          {% if asstp %}
+                                    <table class="table">
+  <thead>
+    <tr>
+ <th colspan="4" class="thstyle"><b>Assistant Professor</b></th>
+    </tr>
+  </thead>
+
+  <tbody>
+                                            {% for i in asstp %}
+
+
+                                                                   <tr>
+
+                                                                       <td>{{i.faculty_name}}</td>
+                                                                        <td>{{i.faculty_email}}</td>
+                                                                        <td>{{i.resume.mob}}</td>
+                                                                        <td><a href="{% url 'faculty_more' i.faculty_id  %}"> More</a></td>
+                                                                   </tr>
+
+  {% endfor %}
+  </tbody>
+</table> {% endif %}
+
+
+
+
+
+   {% if l %}
+                                    <table class="table">
+  <thead>
+    <tr>
+ <th colspan="4" class="thstyle"><b>Lecturer</b></th>
+    </tr>
+  </thead>
+
+  <tbody>
+                                            {% for i in l %}
+
+
+                                                                   <tr>
+
+                                                                       <td>{{i.faculty_name}}</td>
+                                                                        <td>{{i.faculty_email}}</td>
+                                                                        <td>{{i.resume.mob}}</td>
+                                                                        <td><a href="{% url 'faculty_more' i.faculty_id  %}"> More</a></td>
+                                                                   </tr>
+
+  {% endfor %}
+  </tbody>
+</table> {% endif %}
+
+
+
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}

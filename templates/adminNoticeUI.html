@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+
+<h4 class="text-center">All Notices</h4>
+
+<h4 class="text-center"><a href="{% url 'adminNoticeForm' %}">Add New Notice</a></h4>
+
+
+{% for i in n %}
+
+<div class="container" style="margin-top: 50px">
+	<div class="row">
+		<div class="col-3">
+			notice_title
+		</div>
+		<div class="col-9">
+			{{i.notice_title}}
+		</div>
+
+
+
+		<div class="col-3">
+			notice_description
+		</div>
+		<div class="col-9">
+			{{i.notice_description}}
+		</div>
+
+
+		<div class="col-3">
+			create date
+		</div>
+
+
+		<div class="col-9">
+			{{i.month}}
+			{{i.day}}
+			{{i.time}}
+		</div>
+
+
+
+		<div class="col-3">
+			attachment
+		</div>
+
+		{% if i.upload %}
+			<div class="col-9">
+			<a href="{{i.upload.url}}" download>Click here</a>
+		</div>
+		{% endif %}
+
+
+
+
+</div>
+</div>
+
+{% endfor %}
+
+
+
+
+
+
+{% endblock %}
+
+
+

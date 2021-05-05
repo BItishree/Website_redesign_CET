@@ -1,0 +1,152 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+                <form action="" method="POST" enctype="multipart/form-data"  >
+
+  {% csrf_token %}
+                                                            <div class="quform-elements">
+                                                                <div class="quform-element">
+                                                                    <p> faculty_name
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="faculty_name" type="text" name="faculty_name" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>faculty_department
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <select name="faculty_department" required>
+
+                                                                                <option value="Architecture">Architecture</option>
+                                                                                <option value="Biotechnology">Biotechnology</option>
+                                                                                <option value="Civil_Engineering">Civil Engineering</option>
+                                                                                <option value="Computer_Science_and_Engineering">Computer Science & Engineering</option>
+                                                                                <option value="MCA">MCA</option>
+                                                                                <option value="Electrical_Engineering">Electrical Engineering</option>
+                                                                                <option value="Fashion_and_Apparel_Technology">Fashion & Apparel Technology</option>
+                                                                                <option value="Information_Technology">Information Technology</option>
+                                                                                <option value="Instrumentation_and_Electronics Engineering">Instrumentation & Electronics Engineering</option>
+                                                                                <option value="Mechanical_Engineering">Mechanical Engineering</option>
+                                                                                <option value="Textile_Engineering">Textile Engineering</option>
+                                                                                <option value="Planning">Planning</option>
+                                                                                <option value="Mathematics_and_Humanities">Mathematics & Humanities</option>
+                                                                                <option value="Physics">Physics</option>
+                                                                                <option value="Chemistry">Chemistry</option>
+                                                                            </select>                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>faculty_email
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="faculty_email" type="email" name="faculty_email" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>address
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="address" type="text" name="address" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>mob
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="mob" type="number" name="mob" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>faculty_contact_info
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="faculty_contact_info" type="text" name="faculty_contact_info" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                 <div class="quform-element">
+                                                                    <p>faculty_qualification
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="faculty_qualification" type="text" name="faculty_qualification" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                 <div class="quform-element">
+                                                                    <p>designation
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <select name="designation" required>
+                                                                                <option> Lecturer</option>
+                                                                                <option>Associate Professor</option>
+                                                                                <option>Assistant Professor</option>
+                                                                                <option>Professor</option>
+                                                                            </select>
+<!--                                                                            <input id="designation" type="text" name="designation" size="40" class="input1" aria-required="true" aria-invalid="false">-->
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                   <div class="quform-element">
+                                                                    <p>faculty_bio
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="faculty_bio" type="text" name="faculty_bio" size="40" class="input1" aria-required="true" aria-invalid="false" required>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>faculty_pic
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="faculty_pic" name="faculty_pic" >
+                                                                        </span>
+                                                                    </p>
+                                                                    </div>
+
+
+
+                                                            <button type="submit" class="btn btn-primary">ADD</button>
+                                                             </div>
+</form>
+
+{% endblock %}
+

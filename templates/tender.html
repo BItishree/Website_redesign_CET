@@ -1,0 +1,138 @@
+
+
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!--Body-->
+
+
+
+
+
+            <div class="kingster-page-title-wrap  kingster-style-custom kingster-left-align"  style="background-image: url( {% static 'images/5.png' %}) ;">
+                <div class="kingster-header-transparent-substitute"></div>
+                <div class="kingster-page-title-overlay"></div>
+                <div class="kingster-page-title-bottom-gradient"></div>
+                <div class="kingster-page-title-container kingster-container">
+                    <div class="kingster-page-title-content kingster-item-pdlr"
+                        style="padding-top: 400px ;padding-bottom: 60px ;">
+                        <h1 class="kingster-page-title"
+                            style="font-size: 48px ;font-weight: 700 ;text-transform: none ;letter-spacing: 0px ;color: #ffffff ;">
+                            Tender</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="kingster-breadcrumbs">
+                <div class="kingster-breadcrumbs-container kingster-container">
+                    <div class="kingster-breadcrumbs-item kingster-item-pdlr"> <span property="itemListElement"
+                            typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Kingster."
+                                href="index.html" class="home"><span property="name">Home</span></a>
+                            <meta property="position" content="1">
+                        </span>&gt;<span property="itemListElement" typeof="ListItem"><span property="name">Tender</span>
+                            <meta property="position" content="2">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="kingster-page-wrapper" id="kingster-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    <div class="gdlr-core-pbf-sidebar-wrapper " style="margin: 0px 0px 30px 0px;">
+                        <div
+                            class="gdlr-core-pbf-sidebar-container gdlr-core-line-height-0 clearfix gdlr-core-js gdlr-core-container">
+                            <div class="gdlr-core-pbf-sidebar-content gdlr-core-column-40 gdlr-core-pbf-sidebar-padding gdlr-core-line-height gdlr-core-column-extend-left"
+                                style="padding: 35px 0px 20px 0px;">
+                                <div class="gdlr-core-pbf-sidebar-content-inner">
+                                    <table class="style-table" width="97%" border="0" cellspacing="1" cellpadding="3"
+                                        align="center" class="tblbdr">
+                                        <div>&nbsp;</div>
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td align="left" valign="top">
+        <!-- InstanceBeginEditable name="Data" -->
+        <div>&nbsp;</div>
+    <table width="96%" border="0" cellspacing="0" cellpadding="0" align="center" class="tblbdr">
+
+  <tbody><tr>
+    <td>
+
+        <form name="form" id="form" method="post" action="/tender.php">
+      <table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+
+        <tbody><tr>
+          <td class="buttom_line" height="20">&nbsp;<i><b>Click on Tender Name and No to view details</b></i></td>
+          <td height="10" align="right">
+            <nav aria-label="Page navigation" style="margin-right:20px;">
+            <ul class="pagination">
+                                    <li class="page-item active"><a class="page-link" href="?page=1">1</a></li>
+                        <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+            <li class="page-item">
+            <a class="page-link" href="?page=26" aria-label="Next">
+            <span aria-hidden="true">Last</span>
+            </a>
+            </li>
+                        </ul>
+            </nav>
+        </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+          <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center" class="bdrline">
+              <tbody>
+              <tr>
+                <td width="32%" align="left" class="bodytxt" valign="top" style="text-align:left;"><b>Department</b></td>
+                <td width="15%" align="left" class="bodytxt" valign="top" style="text-align:left;"><b>Tender Name and No.</b></td>
+                <td width="17%" align="left" class="bodytxt" valign="top" style="text-align:left;"><b>Opening Date</b></td>
+                <td width="12%" align="left" class="bodytxt" valign="top" style="text-align:left;"><b>Last Date for Tender Submission</b></td>
+                <td width="24%" align="left" class="bodytxt" valign="top" style="padding-left:20px;text-align:left;"><b>Contact Information</b></td>
+                </tr>
+{% for i in n %}
+
+                            <tr class="bdrline">
+                              <td align="left" valign="top" class="bdrline">{{i.tender_department}}</td>
+                                <td width="15%" align="left" valign="top" class="bdrline">
+                                    <a href="{{i.upload.url}}" class="generalLink">{{i.tender_name_no}}</a></td>
+                <td width="17%" align="left" valign="top" class="bdrline"><span class="gentext">{{i.opening_date}}</span></td>
+                <td width="12%" align="left" valign="top" class="bdrline">{{i.last_date}}</td>
+                <td width="24%" align="left" valign="top" class="bdrline" style="padding-left:20px;">{{i.tender_contactinfo}}</td>
+                              </tr>
+
+{% endfor %}
+          </tbody></table>
+          </td>
+          </tr>
+      </tbody></table>
+    </form> </td>
+  </tr>
+</tbody></table>
+    <!-- InstanceEndEditable -->    </td>
+    <td width="10" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="rightmnulftshadowbtm">
+  <tbody><tr>
+    <td height="318">&nbsp;</td>
+  </tr>
+</tbody></table></td>
+  </tr>
+</tbody></table>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<!--Body-->
+                <form action="" method="POST" enctype="multipart/form-data" >
+
+  {% csrf_token %}
+  <div class="quform-elements">
+                                                                <div class="quform-element">
+                                                                    <p>Notice title
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="title" type="text" name="notice_title" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+
+                                                                <div class="quform-element">
+                                                                    <p>notice description
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="desc" type="text" name="notice_description" size="40" class="input1" aria-required="true" aria-invalid="false">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="quform-element">
+                                                                    <p>attachment
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <input type="file" id="upload" name="upload" required>
+                                                                        </span>
+                                                                    </p>
+                                                                    </div>
+
+
+
+  <button type="submit" class="btn btn-primary">ADD</button>
+        </div>
+</form>
+
+{% endblock %}
